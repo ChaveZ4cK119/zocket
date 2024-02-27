@@ -1,5 +1,5 @@
 <?php
-function conectDb(){
+function CDB(){
 
     try {
         $enlase = new PDO('mysql:host=localhost;dbname=zocket', 'root', '');
