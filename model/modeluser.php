@@ -2,6 +2,7 @@
 include 'conection/conection.php';
 
 
+
 class user {
     private $enlase;
     public function ConectDB(){
@@ -29,6 +30,7 @@ class user {
         $nn = $name;
         $sn = $sname;
         $ids = $idn;
+        // $regusercontroller = new regusercontroller();
         $sql1 = $this->enlase -> prepare ('INSERT INTO user_ket (name_ket, surname_ket , idnumber_ket, registerdate_ket) VALUES (?,?,?,NOW');
         $sql1 -> bindParam(1,$nn);
         $sql1 -> bindParam(1,$sn);
